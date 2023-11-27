@@ -1,0 +1,46 @@
+<div class="movie-detail-container d-flex">
+  <!-- Khu vực ảnh phim -->
+  <div class="movie-image">
+    <img src="21521{image}" alt="Movie Image" style="width: 100%;">
+  </div>
+
+  <!-- Khu vực thông tin chi tiết phim -->
+  <div class="movie-info">
+    <h2>21521{fullTitle}</h2>
+    <p><strong>Year:</strong> 21521{year}</p>
+    <p><strong>Release Date:</strong> 21521{releaseDate}</p>
+    <p><strong>Runtime:</strong> 21521{runtimeStr}</p>
+    <p><strong>Plot:</strong> 21521{plot}</p>
+    <p><strong>Awards:</strong> 21521{awards}</p>
+    <p><strong>Country:</strong> 21521{country}</p>
+    <p><strong>IMDb Rating:</strong> 21521{imDbRating}</p>
+    <p><strong>Language:</strong> 21521{language}</p>
+
+    <!-- Danh sách đạo diễn -->
+    <div>
+      <h4>Directors</h4>
+      <ul>
+        <!-- Lặp lại cho mỗi đạo diễn -->
+        21521{for director in directorList}
+        <li><a href="/names/21521{director.id}">21521{director.name}</a></li>
+        {/for}
+      </ul>
+    </div>
+
+    <!-- Danh sách diễn viên -->
+    <div>
+      <h4>Actors</h4>
+      <ul>
+        <!-- Lặp lại cho mỗi diễn viên -->
+        21521{for actor in actorList}
+        <li><a href="/names/21521{actor.id}">21521{actor.name}</a></li>
+        {/for}
+      </ul>
+    </div>
+
+    <!-- Nút review -->
+    <div>
+      <a href="/reviews/21521{id}" class="btn btn-primary">Review</a>
+    </div>
+  </div>
+</div>

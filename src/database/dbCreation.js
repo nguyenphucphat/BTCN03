@@ -30,7 +30,10 @@ const createDatabase = async () => {
       return false;
     }
   } finally {
-    await pool.end();
+    setTimeout(async () => {
+      await pool.end();
+     
+    }, 800); // Đợi 1 giây trước khi đóng pool
   }
 };
 

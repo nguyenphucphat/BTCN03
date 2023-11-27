@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="/css/style.css" /> -->
+    <link rel="stylesheet" href="../../public/css/style.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <div class="mssv fs15">21120521</div>
+        <h2 class="title">Movies info</h2>
+        <section class="rightOfHeader">
+          <div class="keyApi fs15"><210521></div>
+          <div class="darkMode">
+            <section class="darkModeBtn">
+              <input type="checkbox" id="toggle-switch" />
+              <label for="toggle-switch" class="labelDarkMode"></label>
+            </section>
+            <div class="darkModeBtnName fs15">Dark Mode</div>
+          </div>
+        </section>
+      </div>
+
+      <div id="nav">
+        <div class="homeBtn" @click="returnHome">Home</div>
+        <!-- <div v-if="isLoading" class="loading-overlay">
+            <div class="loader"></div>
+          </div> -->
+        <section class="searchWrap">
+          <input type="text" class="searchInput" placeholder="Search" v-model="search" @blur="onSearchInput" />
+          <button @click="searchMovie" class="searchBtn">Search</button>
+        </section>
+      </div>
+
+      <main class="content mb-4">
+        21521{if pageType === 'listMovie'}
+            21521{+ listMovie }
+        {/if}
+        21521{if pageType === 'listReview'}
+            21521{+ listReview }
+        {/if}
+        21521{if pageType === 'movieDetail'}
+            21521{+ movieDetail }
+        {/if}
+        21521{if pageType === 'name-card'}
+            21521{+ name }
+        {/if}
+    </main>
+    
+ 
+
+    <div id="footer">footer</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+<div class="review-list">
+    <!-- Lặp qua mỗi review trong danh sách các review -->
+    21521{for review in reviews}
+      <!-- Gọi template review-card.html với dữ liệu của mỗi review -->
+      <!-- Giả sử rằng template review-card.html đã được load hoặc có thể truy cập từ đây -->
+      21521{include 'review-card.html' with review}
+    {/for}
+  </div>
+  

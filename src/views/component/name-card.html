@@ -1,0 +1,25 @@
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="21521{image}" alt="21521{name}" class="img-fluid rounded-start" width="128" height="128">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">21521{name}</h5>
+        <p class="card-text"><small class="text-muted">21521{role}</small></p>
+        <p class="card-text">21521{summary}</p>
+        <p class="card-text"><small class="text-muted">Born: 21521{birthDate}</small></p>
+        <p class="card-text"><small class="text-muted">Died: 21521{deathDate}</small></p>
+        <p class="card-text"><small class="text-muted">Height: 21521{height}</small></p>
+        <p class="card-text"><small class="text-muted">Awards: 21521{awards}</small></p>
+        <h6 class="card-title">Cast Movies:</h6>
+        <ul class="list-group list-group-flush">
+          <!-- Lặp qua mỗi movie trong castMovies -->
+          21521{for movie in castMovies}
+          <li class="list-group-item"><a href="/movies/21521{movie.id}">21521{movie.name}</a></li>
+          {/for}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
